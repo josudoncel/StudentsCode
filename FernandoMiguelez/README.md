@@ -1,6 +1,4 @@
-# Bego Ispizua: 
-## Mathematics Degree Dissertation (September 2020)
+# Fernando Miguelez: 
+## Master Thesis of Mathematical Modelling, Computing and Statistics (September 2020)
 
-In this folder, you will find two examples of the rmf_tool of https://github.com/ngast/rmf_tool
-
-To execute them, you need to download the tool and put these code in its main folder.
+In this folder, you will find the code that has been in used in the master thesis of Fernando. This code has been also used in the following paper: https://hal.archives-ouvertes.fr/hal-03084240/document
