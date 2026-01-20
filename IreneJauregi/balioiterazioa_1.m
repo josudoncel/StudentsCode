@@ -14,7 +14,7 @@ while norm(V-Vberria,inf)>10^(-10)
         Vberria(e)=max(V1,V2); %egoera bakoitzeko balio optimoak
         if V1 > V2
             politika(e,1)=1; %1. akzioa hobea (Txokolaterik ez jan)
-        elseif
+        elseif V2 > V1
             politika(e,1)=2; %2. akzioa hobea (Txokolatea jan)
         else
             politika(e,1)=3; %3. akzioa hobea (Berdin dio)
