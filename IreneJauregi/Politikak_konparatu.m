@@ -1,11 +1,6 @@
 % POLITIKAK KONPARATZEKO, BALIO ITERAZIO ETA ORACLE METODOEN ARTEAN
 % probabilitateak aldatzen direnean zein egoeretako politikak aldatzen dira?
 
-N = 2;
-lambda= 0.9999;
-c1 = 2;
-c2 = 1;
-
 probabilitateak = 0:0.1:1;
 bikoteak = [];
 for i = 1:length(probabilitateak)
