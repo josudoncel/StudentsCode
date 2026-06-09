@@ -9,23 +9,23 @@ p1 = 0.1; %change also in Q-learning
 p2 = 0.3;
 
 % LOAD DATA
-%data = load('N5_c1_p0.1_0.3.mat');
-%d = data.datuak;
-%states = d(:, 1:4);
-%Qtable = d(:, 5:6);
-%policy = d(:, 7);
-%Q1vector1 = d(:, 8);
-%Q2vector1 = d(:, 9);
-%policy1 = d(:, 10);
-%Q1vector2 = d(:, 11);
-%Q2vector2 = d(:, 12);
-%policy2 = d(:, 13);
-%Q1vector3 = d(:, 14);
-%Q2vector3 = d(:, 15);
-%policy3 = d(:, 16);
-%Q1vector4 = d(:, 17);
-%Q2vector4 = d(:, 18);
-%policy4 = d(:, 19);
+data = load('N15_c3_p0.1_0.3.mat');
+d = data.datuak;
+states = d(:, 1:4);
+Qtable = d(:, 5:6);
+policy = d(:, 7);
+Q1vector1 = d(:, 8);
+Q2vector1 = d(:, 9);
+policy1 = d(:, 10);
+Q1vector2 = d(:, 11);
+Q2vector2 = d(:, 12);
+policy2 = d(:, 13);
+Q1vector3 = d(:, 14);
+Q2vector3 = d(:, 15);
+policy3 = d(:, 16);
+Q1vector4 = d(:, 17);
+Q2vector4 = d(:, 18);
+policy4 = d(:, 19);
 
 
 % SAVE DATA

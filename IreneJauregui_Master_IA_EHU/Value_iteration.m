@@ -97,16 +97,16 @@ while dif > tol
 
         % now x1 < N and x2 < N
         % TREATMENT 1
-        arrakasta_indizea_1 = find(states(:,1) == x1+1 & states(:,2) == y1+1 & states(:,3) == x2 & states(:,4) == y2);
-        porrot_indizea_1 = find(states(:,1) == x1+1 & states(:,2) == y1 & states(:,3) == x2 & states(:,4) == y2);
+        succes_index_1 = find(states(:,1) == x1+1 & states(:,2) == y1+1 & states(:,3) == x2 & states(:,4) == y2);
+        failure_index_1 = find(states(:,1) == x1+1 & states(:,2) == y1 & states(:,3) == x2 & states(:,4) == y2);
 
-        Q1 = lambda*(p1*Vold(arrakasta_indizea_1)+(1-p1)*Vold(porrot_indizea_1));
+        Q1 = lambda*(p1*Vold(succes_index_1)+(1-p1)*Vold(failure_index_1));
 
         % TREATMENT 2
-        arrakasta_indizea_2 = find(states(:,1)==x1 & states(:,2)==y1 & states(:,3)==x2+1 & states(:,4)==y2+1);
-        porrot_indizea_2 = find(states(:,1)==x1 & states(:,2)==y1 & states(:,3)==x2+1 & states(:,4)==y2);
+        succes_index_2 = find(states(:,1)==x1 & states(:,2)==y1 & states(:,3)==x2+1 & states(:,4)==y2+1);
+        failure_index_2 = find(states(:,1)==x1 & states(:,2)==y1 & states(:,3)==x2+1 & states(:,4)==y2);
 
-        Q2=lambda*(p2*Vold(arrakasta_indizea_2)+(1-p2)*Vold(porrot_indizea_2));
+        Q2 = lambda*(p2*Vold(succes_index_2)+(1-p2)*Vold(failure_index_2));
 
 
         % SAVE THE BEST
